@@ -1,0 +1,10 @@
+.idea
+.DS*
+.git
+.vscode
+*.deb
+debian
+software/__pycache__
+.robotchain/build
+.robotchain/.xmake
+.robotchain/firmware.lua

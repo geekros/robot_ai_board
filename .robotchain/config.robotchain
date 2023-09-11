@@ -1,0 +1,53 @@
+{
+    "type": "board",
+    "title": "robot_ai_board",
+    "describe": "三合一机器人主控开发板开源程序包",
+    "document": {
+        "git": "https://github.com/geekros/robot_ai_board",
+        "wiki": "https://www.geekros.com/documentation"
+    },
+    "version": "1.0.0",
+    "Kernel": "cortex-m3",
+    "define": [
+        "USE_STDPERIPH_DRIVER",
+        "STM32F10X_HD"
+    ],
+    "source": [
+        "../hardware/app/src/*.c",
+        "../hardware/main/src/*.c",
+        "../hardware/module/src/*.c",
+        "../hardware/utils/src/*.c",
+        "../hardware/mcu/core/src/*.c",
+        "../hardware/mcu/driver/src/*.c",
+        "../hardware/mcu/usb/USB_Driver/src/usb_bsp.c",
+        "../hardware/mcu/usb/USB_Driver/src/usb_core.c",
+        "../hardware/mcu/usb/USB_Driver/src/usb_dcd.c",
+        "../hardware/mcu/usb/USB_Driver/src/usb_dcd_int.c",
+        "../hardware/mcu/usb/USB_Library/Core/src/usbd_cdc_vcp.c",
+        "../hardware/mcu/usb/USB_Library/Core/src/usbd_core.c",
+        "../hardware/mcu/usb/USB_Library/Core/src/usbd_desc.c",
+        "../hardware/mcu/usb/USB_Library/Core/src/usbd_ioreq.c",
+        "../hardware/mcu/usb/USB_Library/Core/src/usbd_req.c",
+        "../hardware/mcu/usb/USB_Library/Core/src/usbd_usr.c",
+        "../hardware/mcu/usb/USB_Library/Class/cdc/src/usbd_cdc_core.c",
+        "../hardware/system/*.c",
+        "../hardware/system/portable/GCC/ARM_CM4F/port.c",
+        "../hardware/system/portable/MemMang/heap_4.c"
+    ],
+    "include": [
+        "../hardware/app/inc",
+        "../hardware/main/inc",
+        "../hardware/module/inc",
+        "../hardware/utils/inc",
+        "../hardware/mcu/core/inc",
+        "../hardware/mcu/driver/inc",
+        "../hardware/mcu/usb/USB_Driver/inc",
+        "../hardware/mcu/usb/USB_Library/Class/cdc/inc",
+        "../hardware/mcu/usb/USB_Library/Core/inc",
+        "../hardware/system/include",
+        "../hardware/system/portable/GCC/ARM_CM4F"
+    ],
+    "exclude": [
+        "../hardware/mcu/driver/src/stm32f4xx_fsmc.c"
+    ]
+}
