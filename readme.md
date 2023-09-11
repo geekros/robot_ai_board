@@ -1,6 +1,6 @@
 # 🤖 Robot AI Board
 
-⚡ Robot main control development board for RobotChain. ⚡
+⚡ Robot main control development board for robotchain. ⚡
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
