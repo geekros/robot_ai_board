@@ -4,9 +4,9 @@
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
-> 一款多功能三合一机器人主控开发板，主控芯片为STM32F427IIH6，拥有非常的功能接口，如IO、USB、LED、ADC、CAN、PWM、IMU、UART等，一块开发板即可覆盖大部分的机器人应用场景。
-> 
-> An all-in-one main control development board featuring the STM32F427IIH6 microcontroller chip. It boasts a wide array of functional interfaces, including IO, USB, LED, ADC, CAN, PWM, IMU, UART, and more. With this single development board, it can cater to the majority of robot application scenarios.
+> 一款多功能三合一机器人主控开发板，搭载5TOPS算力的RDK X3 Module计算模块，主控芯片为STM32F103RCT6，丰富的机器人外设接口，计算、控制、调试一体化。
+>
+> A multifunctional three-in-one robot main control development board, equipped with the RDK X3 Module computing module with 5TOPS processing power. The main control chip is STM32F103RCT6, with a variety of robot peripheral interfaces, integrating computation, control, and debugging.
 
 ## 📖 Initialization
 
