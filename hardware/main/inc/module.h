@@ -9,6 +9,8 @@
 #define MODULE
 
 #include "utils.h"
+#include "key.h"
+#include "usb.h"
 
 typedef struct
 {
