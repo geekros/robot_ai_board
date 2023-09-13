@@ -10,6 +10,7 @@
 
 #include "utils.h"
 #include "key.h"
+#include "led.h"
 #include "usb.h"
 
 typedef struct

@@ -41,6 +41,7 @@
 #define __HW_CONFIG_H
 
 /* Includes ------------------------------------------------------------------*/
+#include <string.h>
 #include "platform_config.h"
 #include "usb_type.h"
 
@@ -64,6 +65,8 @@ void Get_SerialNum(void);
 void LCD_Control(void);
 uint32_t CDC_Send_DATA (uint8_t *ptrBuffer, uint8_t Send_length);
 uint32_t CDC_Receive_DATA(void);
+void UART_Send(uint8_t *buf, uint32_t num);
+void UART_SendString(char *string);
 /* External variables --------------------------------------------------------*/
 
 #endif  /*__HW_CONFIG_H*/

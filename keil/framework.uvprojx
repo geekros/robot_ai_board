@@ -421,6 +421,11 @@
               <FileType>1</FileType>
               <FilePath>..\hardware\module\src\usb.c</FilePath>
             </File>
+            <File>
+              <FileName>led.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\hardware\module\src\led.c</FilePath>
+            </File>
           </Files>
         </Group>
         <Group>

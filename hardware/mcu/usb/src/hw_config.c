@@ -371,7 +371,7 @@ static void IntToUnicode (uint32_t value , uint8_t *pbuf , uint8_t len)
 * Output         : None.
 * Return         : None.
 *******************************************************************************/
-uint32_t CDC_Send_DATA (uint8_t *ptrBuffer, uint8_t Send_length)
+uint32_t CDC_Send_DATA(uint8_t *ptrBuffer, uint8_t Send_length)
 {
   /*if max buffer is Not reached*/
   if(Send_length < VIRTUAL_COM_PORT_DATA_SIZE)     
@@ -403,6 +403,19 @@ uint32_t CDC_Receive_DATA(void)
   packet_receive = 0;
   SetEPRxValid(ENDP3); 
   return 1 ;
+}
+
+void UART_Send(uint8_t *buf, uint32_t num)
+{
+  for(uint32_t i = 0; i < num; i += VIRTUAL_COM_PORT_DATA_SIZE - 1) {
+    while(packet_sent != 1);
+    CDC_Send_DATA(&buf[i], num - i < VIRTUAL_COM_PORT_DATA_SIZE ? (uint8_t)(num - i) : (VIRTUAL_COM_PORT_DATA_SIZE - 1));
+  }
+}
+
+void UART_SendString(char *string)
+{
+  UART_Send((uint8_t *)string, strlen(string));
 }
 
 /************************ (C) COPYRIGHT STMicroelectronics *****END OF FILE****/

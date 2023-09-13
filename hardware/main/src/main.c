@@ -12,6 +12,8 @@ int main(void)
     Delay_Init(configTICK_RATE_HZ);
 	
 		Usb_Start();
+	
+		Led_Init();
 
     Task_Manage();
 
@@ -39,17 +41,17 @@ void Serial_Task(void)
     {
         // Usb_Read_Data((uint8_t *)Serial_Task_Buffer, Serial_Task_Buffer_Len);
 
-        Module_Handle((char *)Serial_Task_Buffer);
+//        Module_Handle((char *)Serial_Task_Buffer);
 
-        for (int i = 0; i < Serial_Task_Buffer_Len; i++)
-        {
-            if (Serial_Task_Buffer[i] == NULL)
-            {
-                break;
-            }else{
-                Serial_Task_Buffer[i] = NULL;
-            }
-        }
+//        for (int i = 0; i < Serial_Task_Buffer_Len; i++)
+//        {
+//            if (Serial_Task_Buffer[i] == NULL)
+//            {
+//                break;
+//            }else{
+//                Serial_Task_Buffer[i] = NULL;
+//            }
+//        }
 
         delay_ms(10);
     }
