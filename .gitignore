@@ -3,8 +3,11 @@
 .git
 .vscode
 *.deb
+.cfg
 debian
 software/__pycache__
 .robotchain/build
 .robotchain/.xmake
 .robotchain/firmware.lua
+keil/*
+!keil/*.uvprojx

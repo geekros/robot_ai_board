@@ -8,8 +8,8 @@
 #ifndef UTILS_DELAY
 #define UTILS_DELAY
 
-#include <stm32f4xx.h>
-#include "stm32f4xx_it.h"
+#include <stm32f10x.h>
+#include "stm32f10x_it.h"
 
 void Delay_Init(uint32_t TICK_RATE_HZ);
 

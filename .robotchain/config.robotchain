@@ -10,7 +10,8 @@
     "Kernel": "cortex-m3",
     "define": [
         "USE_STDPERIPH_DRIVER",
-        "STM32F10X_HD"
+        "STM32F10X_HD",
+        "USE_STM3210E_EVAL"
     ],
     "source": [
         "../hardware/app/src/*.c",

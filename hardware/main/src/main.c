@@ -11,25 +11,25 @@ int main(void)
 {
     Delay_Init(configTICK_RATE_HZ);
 
-    Usb_Init();
+//    Usb_Init();
 
-    Cpu_Init();
+//    Cpu_Init();
 
-    Led_Init();
+//    Led_Init();
 
-    Can_Init();
+//    Can_Init();
 
-    Power_Init();
+//    Power_Init();
 
-    Key_Init();
+//    Key_Init();
 
-    Pwm_Init();
+//    Pwm_Init();
 
-    Adc_Init();
+//    Adc_Init();
 
-    Mpu_Init();
+//    Mpu_Init();
 
-    Buzzer_Init();
+//    Buzzer_Init();
 
     Task_Manage();
 
@@ -41,11 +41,11 @@ void System_Task(void)
     while (1)
     {
 
-        Adc_Task();
+        // Adc_Task();
 
-        Can_Task();
+        // Can_Task();
 
-        Mpu_Task();
+        // Mpu_Task();
 
         delay_ms(5);
     }
@@ -55,7 +55,7 @@ void Serial_Task(void)
 {
     while (1)
     {
-        Usb_Read_Data((uint8_t *)Serial_Task_Buffer, Serial_Task_Buffer_Len);
+        // Usb_Read_Data((uint8_t *)Serial_Task_Buffer, Serial_Task_Buffer_Len);
 
         Module_Handle((char *)Serial_Task_Buffer);
 
