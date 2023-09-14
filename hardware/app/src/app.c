@@ -26,10 +26,8 @@ void Loop()
 	
 	// Pwm_Test();
 	
-	uint8_t buffer[] = "123";
-	uint16_t length = 3;
-	CDC_Send_DATA(buffer, length);
-	delay_ms(500);
+	UART_SendString("121212121\r\n");
+	delay_ms(1500);
 }
 
 void Pwm_Test(void)
