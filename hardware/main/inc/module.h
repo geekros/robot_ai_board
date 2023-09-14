@@ -9,8 +9,11 @@
 #define MODULE
 
 #include "utils.h"
+#include "adc.h"
 #include "key.h"
 #include "led.h"
+#include "pwm.h"
+#include "motor.h"
 #include "usb.h"
 
 typedef struct

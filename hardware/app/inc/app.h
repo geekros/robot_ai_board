@@ -15,4 +15,6 @@ void Setup(void);
 
 void Loop(void);
 
+void Pwm_Test(void);
+
 #endif

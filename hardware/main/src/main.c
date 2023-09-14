@@ -9,11 +9,22 @@
 
 int main(void)
 {
+	
+		// NVIC_PriorityGroupConfig(NVIC_PriorityGroup_4);
+	
     Delay_Init(configTICK_RATE_HZ);
 	
 		Usb_Start();
 	
+		Encoder_Motor_Init();
+	
+		Adc_Init();
+	
 		Led_Init();
+	
+		Key_Init();
+	
+		Pwm_Init();
 
     Task_Manage();
 
@@ -25,12 +36,8 @@ void System_Task(void)
     while (1)
     {
 
-        // Adc_Task();
-
-        // Can_Task();
-
-        // Mpu_Task();
-
+        Encoder_Motor_Task();
+				
         delay_ms(5);
     }
 }

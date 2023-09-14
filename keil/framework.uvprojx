@@ -412,6 +412,11 @@
           <GroupName>module</GroupName>
           <Files>
             <File>
+              <FileName>adc.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\hardware\module\src\adc.c</FilePath>
+            </File>
+            <File>
               <FileName>key.c</FileName>
               <FileType>1</FileType>
               <FilePath>..\hardware\module\src\key.c</FilePath>
@@ -425,6 +430,16 @@
               <FileName>led.c</FileName>
               <FileType>1</FileType>
               <FilePath>..\hardware\module\src\led.c</FilePath>
+            </File>
+            <File>
+              <FileName>pwm.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\hardware\module\src\pwm.c</FilePath>
+            </File>
+            <File>
+              <FileName>motor.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\hardware\module\src\motor.c</FilePath>
             </File>
           </Files>
         </Group>

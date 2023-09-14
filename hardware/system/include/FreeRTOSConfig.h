@@ -233,11 +233,11 @@
  //启用软件定时器
 #define configUSE_TIMERS                        1                              
 //软件定时器优先级
-#define configTIMER_TASK_PRIORITY               (configMAX_PRIORITIES-1)        
+#define configTIMER_TASK_PRIORITY               (1)        
 //软件定时器队列长度
-#define configTIMER_QUEUE_LENGTH                10                               
+#define configTIMER_QUEUE_LENGTH                20                               
 //软件定时器任务堆栈大小
-#define configTIMER_TASK_STACK_DEPTH            (configMINIMAL_STACK_SIZE*2)    
+#define configTIMER_TASK_STACK_DEPTH            (configMINIMAL_STACK_SIZE)    
  
  
 /************************************************************
@@ -269,9 +269,8 @@
 //系统可管理的最高中断优先级
 #define configLIBRARY_MAX_SYSCALL_INTERRUPT_PRIORITY    5 
  
-#define configKERNEL_INTERRUPT_PRIORITY         ( configLIBRARY_LOWEST_INTERRUPT_PRIORITY << (8 - configPRIO_BITS) )    /* 240 */
- 
-#define configMAX_SYSCALL_INTERRUPT_PRIORITY    ( configLIBRARY_MAX_SYSCALL_INTERRUPT_PRIORITY << (8 - configPRIO_BITS) )
+#define configKERNEL_INTERRUPT_PRIORITY 		( configLIBRARY_LOWEST_INTERRUPT_PRIORITY << (8 - configPRIO_BITS) )
+#define configMAX_SYSCALL_INTERRUPT_PRIORITY 	( configLIBRARY_MAX_SYSCALL_INTERRUPT_PRIORITY << (8 - configPRIO_BITS) )
  
  
 /****************************************************************
@@ -279,13 +278,5 @@
 ****************************************************************/
 #define xPortPendSVHandler  PendSV_Handler
 #define vPortSVCHandler     SVC_Handler
- 
- 
-/* 以下为使用Percepio Tracealyzer需要的东西，不需要时将 configUSE_TRACE_FACILITY 定义为 0 */
-#if ( configUSE_TRACE_FACILITY == 1 )
-#include "trcRecorder.h"
-#define INCLUDE_xTaskGetCurrentTaskHandle               1   // 启用一个可选函数（该函数被 Trace源码使用，默认该值为0 表示不用）
-#endif
- 
  
 #endif /* FREERTOS_CONFIG_H */
