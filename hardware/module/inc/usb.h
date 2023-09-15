@@ -14,7 +14,6 @@
 #include <string.h>
 #include <math.h>
 
-#include "hw_config.h"
 #include "utils.h"
 
 void Usb_Start(void);

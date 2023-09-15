@@ -69,7 +69,7 @@ typedef enum
   */
 
 typedef enum
-{ GPIO_Mode_AIN = 0x00,
+{ GPIO_Mode_AIN = 0x0,
   GPIO_Mode_IN_FLOATING = 0x04,
   GPIO_Mode_IPD = 0x28,
   GPIO_Mode_IPU = 0x48,
@@ -358,13 +358,13 @@ void GPIO_SetBits(GPIO_TypeDef* GPIOx, uint16_t GPIO_Pin);
 void GPIO_ResetBits(GPIO_TypeDef* GPIOx, uint16_t GPIO_Pin);
 void GPIO_WriteBit(GPIO_TypeDef* GPIOx, uint16_t GPIO_Pin, BitAction BitVal);
 void GPIO_Write(GPIO_TypeDef* GPIOx, uint16_t PortVal);
-void GPIO_ToggleBits(GPIO_TypeDef* GPIOx, uint16_t GPIO_Pin);
 void GPIO_PinLockConfig(GPIO_TypeDef* GPIOx, uint16_t GPIO_Pin);
 void GPIO_EventOutputConfig(uint8_t GPIO_PortSource, uint8_t GPIO_PinSource);
 void GPIO_EventOutputCmd(FunctionalState NewState);
 void GPIO_PinRemapConfig(uint32_t GPIO_Remap, FunctionalState NewState);
 void GPIO_EXTILineConfig(uint8_t GPIO_PortSource, uint8_t GPIO_PinSource);
 void GPIO_ETH_MediaInterfaceConfig(uint32_t GPIO_ETH_MediaInterface);
+void GPIO_ToggleBits(GPIO_TypeDef* GPIOx, uint16_t GPIO_Pin);
 
 #ifdef __cplusplus
 }

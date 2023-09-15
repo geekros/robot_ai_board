@@ -26,7 +26,6 @@ void Loop()
 	
 	// Pwm_Test();
 	
-	UART_SendString("121212121\r\n");
 	delay_ms(1500);
 }
 
