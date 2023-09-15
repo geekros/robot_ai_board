@@ -335,7 +335,7 @@
             <v6Rtti>0</v6Rtti>
             <VariousControls>
               <MiscControls></MiscControls>
-              <Define>USE_STDPERIPH_DRIVER,STM32F10X_HD</Define>
+              <Define>USE_STDPERIPH_DRIVER,STM32F10X_HD,USE_STM3210E_EVAL</Define>
               <Undefine></Undefine>
               <IncludePath>..\hardware\main\inc;..\hardware\mcu\driver\inc;..\hardware\mcu\core\inc;..\hardware\utils\inc;..\hardware\system\include;..\hardware\system\portable\RVDS\ARM_CM3;..\hardware\app\inc;..\hardware\mcu\usb\inc;..\hardware\module\inc</IncludePath>
             </VariousControls>
@@ -595,6 +595,68 @@
         </Group>
         <Group>
           <GroupName>mcu_usb</GroupName>
+          <Files>
+            <File>
+              <FileName>hw_config.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\hardware\mcu\usb\src\hw_config.c</FilePath>
+            </File>
+            <File>
+              <FileName>usb_core.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\hardware\mcu\usb\src\usb_core.c</FilePath>
+            </File>
+            <File>
+              <FileName>usb_desc.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\hardware\mcu\usb\src\usb_desc.c</FilePath>
+            </File>
+            <File>
+              <FileName>usb_endp.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\hardware\mcu\usb\src\usb_endp.c</FilePath>
+            </File>
+            <File>
+              <FileName>usb_init.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\hardware\mcu\usb\src\usb_init.c</FilePath>
+            </File>
+            <File>
+              <FileName>usb_int.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\hardware\mcu\usb\src\usb_int.c</FilePath>
+            </File>
+            <File>
+              <FileName>usb_istr.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\hardware\mcu\usb\src\usb_istr.c</FilePath>
+            </File>
+            <File>
+              <FileName>usb_mem.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\hardware\mcu\usb\src\usb_mem.c</FilePath>
+            </File>
+            <File>
+              <FileName>usb_prop.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\hardware\mcu\usb\src\usb_prop.c</FilePath>
+            </File>
+            <File>
+              <FileName>usb_pwr.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\hardware\mcu\usb\src\usb_pwr.c</FilePath>
+            </File>
+            <File>
+              <FileName>usb_regs.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\hardware\mcu\usb\src\usb_regs.c</FilePath>
+            </File>
+            <File>
+              <FileName>usb_sil.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\hardware\mcu\usb\src\usb_sil.c</FilePath>
+            </File>
+          </Files>
         </Group>
         <Group>
           <GroupName>system</GroupName>

@@ -25,7 +25,8 @@ void Loop()
 	}
 	
 	// Pwm_Test();
-	
+	char str[] = "Hello World!\r\n";
+	CDC_Send_DATA((uint8_t*)str, 14);
 	delay_ms(1500);
 }
 

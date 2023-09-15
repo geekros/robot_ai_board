@@ -29,6 +29,10 @@
 
 /* Includes ------------------------------------------------------------------*/
 #include "stm32f10x.h"
+#include "platform_config.h"
+#include "hw_config.h"
+#include "usb_lib.h"
+#include "usb_istr.h"
 #include "FreeRTOS.h"
 #include "task.h"
 
@@ -47,7 +51,8 @@ void DebugMon_Handler(void);
 //void PendSV_Handler(void);
 void SysTick_Handler(void);
 uint32_t Get_SysTick(void);
-
+void USB_LP_CAN1_RX0_IRQHandler(void);
+void USBWakeUp_IRQHandler(void);
 #ifdef __cplusplus
 }
 #endif
