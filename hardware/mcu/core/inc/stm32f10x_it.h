@@ -29,7 +29,6 @@
 
 /* Includes ------------------------------------------------------------------*/
 #include "stm32f10x.h"
-#include "platform_config.h"
 #include "hw_config.h"
 #include "usb_lib.h"
 #include "usb_istr.h"

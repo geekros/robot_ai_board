@@ -14,7 +14,7 @@ int main(void)
 	
     Delay_Init(configTICK_RATE_HZ);
 	
-		Usb_Start();
+		Usb_Init();
 	
 		Encoder_Motor_Init();
 	

@@ -7,7 +7,7 @@
         "wiki": "https://www.geekros.com/documentation"
     },
     "version": "1.0.0",
-    "Kernel": "cortex-m3",
+    "kernel": "cortex-m3",
     "define": [
         "USE_STDPERIPH_DRIVER",
         "STM32F10X_HD",
