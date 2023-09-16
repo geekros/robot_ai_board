@@ -34,6 +34,7 @@ sudo cp -r block debian/opt/robotchain/manager/board/"$title"/
 sudo cp -r doc debian/opt/robotchain/manager/board/"$title"/
 sudo cp -r hardware debian/opt/robotchain/manager/board/"$title"/
 sudo cp -r software debian/opt/robotchain/manager/board/"$title"/
+sudo cp -r keil debian/opt/robotchain/manager/board/"$title"/
 sudo cp .gitignore debian/opt/robotchain/manager/board/"$title"/
 sudo cp readme.md debian/opt/robotchain/manager/board/"$title"/
 
