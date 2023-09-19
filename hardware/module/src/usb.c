@@ -7,10 +7,10 @@
 
 #include "usb.h"
 
-extern __IO uint8_t Receive_Buffer[64]; // ½ÓÊÕ»º³åÇø ÓÉ¿â¶¨Òå
-extern __IO  uint32_t Receive_length ; // ½ÓÊÕÊı¾İ³¤¶È ÓÉ¿â¶¨Òå
-__IO uint32_t packet_sent = 1; // ·¢ËÍÍê³É±êÖ¾Î»
-__IO uint32_t packet_receive = 1; // ½ÓÊÕÍê³É±êÖ¾Î»
+extern __IO uint8_t Receive_Buffer[64]; // æ¥æ”¶ç¼“å†²åŒº ç”±åº“å®šä¹‰
+extern __IO  uint32_t Receive_length ; // æ¥æ”¶æ•°æ®é•¿åº¦ ç”±åº“å®šä¹‰
+__IO uint32_t packet_sent = 1; // å‘é€å®Œæˆæ ‡å¿—ä½
+__IO uint32_t packet_receive = 1; // æ¥æ”¶å®Œæˆæ ‡å¿—ä½
 
 
 void Usb_Init(void)

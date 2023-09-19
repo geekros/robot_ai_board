@@ -1,7 +1,7 @@
 #!/usr/bin/env python
 # -*- coding: utf-8 -*-
 
-import robotchain_sdk as framework
+import robotchain as framework
 
 def robot_start(sdk):
     sdk.utils.log.debug(sdk.ros.client.is_connected)

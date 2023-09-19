@@ -10,8 +10,6 @@
 int main(void)
 {
 	
-		// NVIC_PriorityGroupConfig(NVIC_PriorityGroup_4);
-	
     Delay_Init(configTICK_RATE_HZ);
 	
 		Usb_Init();

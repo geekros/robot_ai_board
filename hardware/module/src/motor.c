@@ -31,9 +31,6 @@ void Encoder_Motor_Init(void)
 	Encoder_Motor1_Control(0);
 	Encoder_Motor2_Control(0);
 	
-	Encoder_Motor_Status.motor1_pwm = 500;
-	Encoder_Motor_Status.motor2_pwm = 500;
-	
 	Encoder_Motor1_Init();
 	Encoder_Motor2_Init();
 }
